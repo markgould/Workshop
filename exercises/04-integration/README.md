@@ -105,14 +105,14 @@ public class ShipWithFedexCommandHandler : IHandleMessages<ShipWithFedexCommand>
 
     private XDocument CreateFedexRequest(string name, string street, string city, string postalCode, string country)
     {
-        var shipment =
+        var shipment = new XDocument(
             new XElement("FedExShipment",
                 new XElement("ShipTo",
                     new XElement("Name", name),
                     new XElement("Street", street),
                     new XElement("City", city),
                     new XElement("PostalCode", postalCode),
-                    new XElement("Country", country)));
+                    new XElement("Country", country))));
         return shipment.Document;
     }
 
