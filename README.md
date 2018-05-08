@@ -83,6 +83,8 @@ The exercises are contained in eight Visual Studio solutions under [exercises](e
 
 Before opening any exercise solutions, set the startup projects by navigating to your copy of this repo and running `set-startup-projects.cmd`. Note that if you `git clean` your clone, you will have to run this command again.
 
+Note: do not run the `set-startup-projects.cmd` with any exercise or demo solution open. The script deletes and then regenerates solutions user setting, if run with a solution open it might corrupt solution user settings.
+
 The startup projects are also listed in the instructions for each exercise. If you need to, you can configure them manually:
 
   - In Visual Studio, right click the solution in the Solution Explorer
